@@ -378,15 +378,6 @@ table{
     margin-right: auto;
     margin-left: auto;
 }
-.formButton{
-    background-color: #2B2B2B;
-    border: 1px solid black;
-    color: #fff;
-    width: 8em;
-}
-.formButton p{
-    font-weight: 600;
-}
 .firstInput{
     width: 30em;
     border: 1px #fff solid;
@@ -421,7 +412,12 @@ table{
 
 }
 .searchIcon{
-    display: none;
+    position: absolute;
+    right: 43px;
+    top: 20px;
+    width: 20px;
+    margin-left: -10px;
+    visibility: hidden;
 }
 .godaddy_guard{
     background-image: url(https://img1.wsimg.com/cdn/Image/All/All/1/All/5dbeea8f-a487-4950-81d0-c646dd3d3209/mrq-Guide-EMEA-Jamila-desktop.jpg);
@@ -479,6 +475,7 @@ table{
 .customer_idea{
     width: 100%;
     /* text-align: center; */
+    margin-bottom: 80px;
 }
 .customer_idea h2{
     width: 35%;
@@ -647,7 +644,7 @@ footer{
         font-size: 24px;
     }
     .questions{
-        width: 90%;
+        width: 40%;
     }
     .findInput{
         width: 85%;
@@ -687,14 +684,6 @@ footer{
     .nav3 svg{
         margin-left: 10px;
         margin-right: 10px;
-    }
-    .formButton p{
-        display: none;
-    }
-    .searchIcon{
-        display: block;
-        width: 50px;
-        padding-left: 30px;
     }
 
 }
@@ -1015,9 +1004,10 @@ footer{
         width: 14em;
 
     }
-    .searchIcon{
-        padding-left: 15px;
-        width: 40px;
+    .searchIcon_input{
+        width: 50px;
+
+        right: 10px;
     }
 
 }
@@ -1033,7 +1023,6 @@ footer{
         position: absolute;
         right: 10px  !important;
     }
-    
 }
 
 
