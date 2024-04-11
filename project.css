@@ -20,7 +20,11 @@ nav{
 }
 .nav-container{
     display: flex;
-    padding: 15px 44px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     justify-content:space-between;
     color: #fff;
 }
@@ -92,10 +96,10 @@ nav{
     height: 70px;
     margin-bottom: 16px;
     position: relative;
+    display: flex;
 }
 .findInput{
     width: 77%;
-    height: 60px;
     border: 1px solid black;
     background-color: #E8EAEB;
 }
@@ -108,11 +112,21 @@ nav{
 .searchInput{
     width: 15%;
     height: 60px;
-    margin-left: -10px;
+   
     text-align: center;
     font-size: 17px;  
+    
+}
+.firstForm_button{
     background-color: #09757A;
     border: 1px solid #09757A;
+    color: #fff;
+    margin-left: -5px;
+    width: 10em;
+}
+.firstForm_button p{
+    font-weight: 650;
+    font-size: 14px;
 }
 
 .searchInput::placeholder{
@@ -136,7 +150,6 @@ nav{
     display: none;
 }
 .imageText{
-    padding-left: 25px;
     padding-top: 10px;
     width: 30%;
 }
@@ -616,7 +629,7 @@ footer{
     visibility: hidden;
 }
 .domainSvg{
-    visibility: hidden;
+    display: none;
 }
 .searchIcon_input{
     visibility: hidden;
@@ -651,7 +664,6 @@ footer{
     }
     .findInput{
         width: 85%;
-        height: 53px;
     }
     .searchInput{
         height: 53px;
@@ -762,13 +774,13 @@ footer{
         visibility: visible;
     }
     .domainSvg{
-        position: absolute;
-        right: 15px;
-        width: 30px;
-        padding-top: 15px;
-        padding-right: 10px;
-        visibility: visible;
+        width: 70px;
+        display: block;
         fill: #fff;
+        padding-left: 40px;
+    }
+    .firstForm_button p{
+        display: none;
     }
     .findInput{
         width: 90%;
@@ -929,6 +941,13 @@ footer{
     .searchIcon_input{
         width: 80px;
     }
+    .firstForm_button {
+        width: 5em;
+    }
+    .domainSvg{
+        padding-left: 15px;
+        width: 40px;
+    }
 }
 @media screen and (max-width: 996px){
     .textContent > h3{
@@ -1013,11 +1032,17 @@ footer{
 @media screen and (max-width: 390px){
     .firstInput{
         width: 14em;
-
     }
     .searchIcon{
         padding-left: 15px;
         width: 40px;
+    }
+    .firstForm_button{
+        width: 5em;
+    }
+    .domainSvg{
+        padding-left: 10px;
+        width: 30px;
     }
 
 }
